@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "link-list",
+  "description": "Create a link in bio page for your social media accounts. Add to IPFS in Brave Browser",
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+],
+  "background": {
+    "scripts": ["service-worker.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Link in Bio creator"
+  },
+  "icons": {
+    "16": "icon.png"
+  }
+}
